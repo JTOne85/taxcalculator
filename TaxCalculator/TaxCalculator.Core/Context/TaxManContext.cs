@@ -3,7 +3,7 @@ using TaxCalculator.Core.Entities;
 
 namespace TaxCalculator.Core.Context
 {
-    public partial class TaxManContext : DbContext
+    public partial class TaxManContext : DbContext, IDbContext
     {
         public TaxManContext()
         {
