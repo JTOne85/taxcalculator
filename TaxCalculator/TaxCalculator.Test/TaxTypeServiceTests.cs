@@ -14,13 +14,10 @@ namespace TaxCalculator.Test
         private TaxTypeService _taxTypeService;
         private Mock<ITaxTypeRepository> _taxTypeRepository;
 
-        private List<TaxType> _taxTypes;
-
         [SetUp]
         public void Setup()
         {
             _taxTypeRepository = new Mock<ITaxTypeRepository>();
-            
 
             _taxTypeService = new TaxTypeService(_taxTypeRepository.Object);
         }
@@ -36,7 +33,28 @@ namespace TaxCalculator.Test
             var allTypes = _taxTypeService.GetAll();
 
             // Assert
-            Assert.IsNull(allTypes);
+            Assert.AreEqual(allTypes.Count(), 3);
+        }
+
+        [Test]
+        [TestCase(1, "Flat value")]
+        [TestCase(2, "Flat Rate")]
+        [TestCase(3, "Progressive rate")]
+        public void ShouldGetTaxTypeById(int id, string description)
+        {
+            // Arrange
+            var taxTypes = Helpers.CreateTaxTypes();
+            _taxTypeRepository.Setup(r => r.GetAll()).Returns(taxTypes.AsQueryable());
+
+            // Act
+            var taxType = _taxTypeService.GetTaxTypeById(id);
+
+            // Assert
+            Assert.That(taxType.Id, Is.EqualTo(id));
+            Assert.That(taxType.TaxTypeDescription, Is.EqualTo(description));
+
+
         }
     }
 }
+
