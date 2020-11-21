@@ -52,8 +52,6 @@ namespace TaxCalculator.Test
             // Assert
             Assert.That(taxType.Id, Is.EqualTo(id));
             Assert.That(taxType.TaxTypeDescription, Is.EqualTo(description));
-
-
         }
     }
 }

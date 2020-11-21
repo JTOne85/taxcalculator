@@ -1,0 +1,9 @@
+TaxCalculator.Test/obj/
+TaxCalculator.Test/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+TaxCalculator.Test/bin/
+TaxCalculator.Core/bin/
+TaxCalculator.API/obj/
+TaxCalculator.API/bin/
+.vs/TaxCalculator/v16/TestStore/0/000.testlog
+.vs/TaxCalculator/v16/TestStore/0/testlog.manifest
+*.user
