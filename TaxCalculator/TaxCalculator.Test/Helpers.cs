@@ -30,15 +30,15 @@ namespace TaxCalculator.Test
         {
             return new List<TaxBand>
             {
-                new TaxBand{ Id = 1, TaxRateCode = "FV0", LowerLimit = 0m, UpperLimit = 199999.99m},
-                new TaxBand{ Id = 2, TaxRateCode = "FV1", LowerLimit = 200000.00m},
-                new TaxBand{ Id = 3, TaxRateCode = "FR" },
-                new TaxBand{ Id = 4, TaxRateCode = "P0", LowerLimit = 0, UpperLimit = 8350.99m},
-                new TaxBand{ Id = 5, TaxRateCode = "P1", LowerLimit = 8351.00m, UpperLimit = 33950.99m},
-                new TaxBand{ Id = 6, TaxRateCode = "P2", LowerLimit = 33951.00m, UpperLimit = 82250.99m},
-                new TaxBand{ Id = 7, TaxRateCode = "P3", LowerLimit = 82251.00m, UpperLimit = 171550.99m},
-                new TaxBand{ Id = 8, TaxRateCode = "P4", LowerLimit = 171551.00m, UpperLimit = 372950.99m},
-                new TaxBand{ Id = 9, TaxRateCode = "P5", LowerLimit = 372951.00m}
+                new TaxBand{ Id = 1, TaxRateCode = "FV0", LowerLimit = 0m, UpperLimit = 199999.99m, IsActive = true},
+                new TaxBand{ Id = 2, TaxRateCode = "FV1", LowerLimit = 200000.00m, IsActive = true},
+                new TaxBand{ Id = 3, TaxRateCode = "FR" , IsActive = true},
+                new TaxBand{ Id = 4, TaxRateCode = "P0", LowerLimit = 0, UpperLimit = 8350.99m, IsActive = true},
+                new TaxBand{ Id = 5, TaxRateCode = "P1", LowerLimit = 8351.00m, UpperLimit = 33950.99m, IsActive = true},
+                new TaxBand{ Id = 6, TaxRateCode = "P2", LowerLimit = 33951.00m, UpperLimit = 82250.99m, IsActive = true},
+                new TaxBand{ Id = 7, TaxRateCode = "P3", LowerLimit = 82251.00m, UpperLimit = 171550.99m, IsActive = true},
+                new TaxBand{ Id = 8, TaxRateCode = "P4", LowerLimit = 171551.00m, UpperLimit = 372950.99m, IsActive = true},
+                new TaxBand{ Id = 9, TaxRateCode = "P5", LowerLimit = 372951.00m, IsActive = true }
             };
         }
     }
