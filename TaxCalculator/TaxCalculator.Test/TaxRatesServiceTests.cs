@@ -55,5 +55,20 @@ namespace TaxCalculator.Test
             Assert.That(taxRates.Count, Is.EqualTo(taxBandIds.Length));
             Assert.That(taxRates.Select(r => r.TaxBandId).ToList(), Is.EquivalentTo(taxBandIds.ToList()));
         }
+
+        public void ShouldGetTaxTypeByPostalCode()
+        {
+
+        }
+
+        public void ShouldGetTaxRatesByPostalCodeTaxTypeAndIncome()
+        {
+
+        }
+
+        public void ShouldGetTaxBandsByPostalCodeTaxTypeAndIncome()
+        {
+
+        }
     }
 }
