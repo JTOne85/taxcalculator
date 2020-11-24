@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using TaxCalculator.Core.Entities;
 using TaxCalculator.Core.Repositories.PostalCodes;
 using TaxCalculator.Core.Repositories.TaxRates;
@@ -19,6 +20,11 @@ namespace TaxCalculator.Core.Services.TaxRates
         public IEnumerable<TaxRate> GetAll()
         {
             return _taxRatesRepository.GetAll();
+        }
+
+        public IEnumerable<TaxRate> GetTaxRatesByTaxType(int taxTypeId)
+        {
+            return GetAll().Where(r => r.TaxTypeId == taxTypeId);
         }
     }
 }

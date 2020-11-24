@@ -54,7 +54,7 @@ namespace TaxCalculator.Test
                 new TaxRate {Id = 6, TaxBandId = 6, TaxTypeId = 3, RateValue = 0.25m, IsActive = true, IsDeleted = false, CreatedDate = DateTime.Now},
                 new TaxRate {Id = 7, TaxBandId = 7, TaxTypeId = 3, RateValue = 0.28m, IsActive = true, IsDeleted = false, CreatedDate = DateTime.Now},
                 new TaxRate {Id = 8, TaxBandId = 8, TaxTypeId = 3, RateValue = 0.33m, IsActive = true, IsDeleted = false, CreatedDate = DateTime.Now},
-                new TaxRate {Id = 9, TaxBandId = 8, TaxTypeId = 3, RateValue = 0.35m, IsActive = true, IsDeleted = false, CreatedDate = DateTime.Now},
+                new TaxRate {Id = 9, TaxBandId = 9, TaxTypeId = 3, RateValue = 0.35m, IsActive = true, IsDeleted = false, CreatedDate = DateTime.Now},
             };
         }
     }

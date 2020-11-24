@@ -39,5 +39,21 @@ namespace TaxCalculator.Test
             // Assert
             Assert.That(taxRates.Count, Is.EqualTo(_taxRates.Count()));
         }
+
+        [TestCase(1,new[] { 1,2})]
+        [TestCase(2, new[] {3})]
+        [TestCase(3, new[] { 4,5,6,7,8,9})]
+        
+        public void ShouldGetTaxRatesForTaxType(int taxTypeId, int[] taxBandIds)
+        {
+            // Arrange
+
+            // Act 
+            var taxRates = _taxRatesService.GetTaxRatesByTaxType(taxTypeId);
+
+            // Assert
+            Assert.That(taxRates.Count, Is.EqualTo(taxBandIds.Length));
+            Assert.That(taxRates.Select(r => r.TaxBandId).ToList(), Is.EquivalentTo(taxBandIds.ToList()));
+        }
     }
 }
