@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using TaxCalculator.Core.Entities;
+﻿using TaxCalculator.Core.Entities;
 
 namespace TaxCalculator.Core.Repositories
 {
