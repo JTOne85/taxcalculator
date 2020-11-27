@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 using TaxCalculator.Core.Entities;
 
 namespace TaxCalculator.Core.Services.TaxBands

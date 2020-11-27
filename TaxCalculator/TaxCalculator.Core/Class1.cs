@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace TaxCalculator.Core
+﻿namespace TaxCalculator.Core
 {
     public class Class1
     {

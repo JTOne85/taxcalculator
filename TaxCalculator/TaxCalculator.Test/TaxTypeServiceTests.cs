@@ -1,9 +1,8 @@
-﻿using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using Moq;
 using NUnit.Framework;
-using TaxCalculator.Core.Entities;
 using TaxCalculator.Core.Repositories;
+using TaxCalculator.Core.Repositories.TaxTypes;
 using TaxCalculator.Core.Services;
 
 namespace TaxCalculator.Test
