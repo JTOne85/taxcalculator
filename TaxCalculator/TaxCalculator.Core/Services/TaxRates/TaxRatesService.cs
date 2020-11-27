@@ -6,6 +6,7 @@ using TaxCalculator.Core.Repositories;
 using TaxCalculator.Core.Repositories.PostalCodes;
 using TaxCalculator.Core.Repositories.TaxBands;
 using TaxCalculator.Core.Repositories.TaxRates;
+using TaxCalculator.Core.Repositories.TaxTypes;
 
 namespace TaxCalculator.Core.Services.TaxRates
 {

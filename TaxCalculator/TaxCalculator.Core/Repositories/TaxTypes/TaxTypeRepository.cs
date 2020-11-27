@@ -2,7 +2,7 @@
 using TaxCalculator.Core.Context;
 using TaxCalculator.Core.Entities;
 
-namespace TaxCalculator.Core.Repositories
+namespace TaxCalculator.Core.Repositories.TaxTypes
 {
     public class TaxTypeRepository : Repository<TaxType>, ITaxTypeRepository
     {

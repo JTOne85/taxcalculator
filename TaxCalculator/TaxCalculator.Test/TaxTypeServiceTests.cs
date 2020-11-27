@@ -2,6 +2,7 @@
 using Moq;
 using NUnit.Framework;
 using TaxCalculator.Core.Repositories;
+using TaxCalculator.Core.Repositories.TaxTypes;
 using TaxCalculator.Core.Services;
 
 namespace TaxCalculator.Test

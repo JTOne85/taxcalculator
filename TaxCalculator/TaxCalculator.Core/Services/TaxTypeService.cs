@@ -2,6 +2,7 @@
 using System.Linq;
 using TaxCalculator.Core.Entities;
 using TaxCalculator.Core.Repositories;
+using TaxCalculator.Core.Repositories.TaxTypes;
 
 namespace TaxCalculator.Core.Services
 {
