@@ -34,6 +34,7 @@ begin
 		   TaxRateCode nvarchar(3)  not null primary key,
 		   LowerLimit  decimal(9,3)     null,
 		   UpperLimit  decimal(9,3)     null,
+		   TaxTypeId   int          not null,
 		   IsActive    bit          not null,
 		   IsDeleted   bit          not null,
 		   CreatedDate datetime         null,
